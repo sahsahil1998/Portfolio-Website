@@ -2,26 +2,38 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    height: 100%; /* Ensure full height */
 }
 
 .sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
+    height: 100vh; /* Full height */
+    width: 250px; /* Sidebar width */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111;
-    overflow-x: hidden;
+    background-color: #111; /* Dark background color */
+    overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.sidebar ul li {
+    padding: 8px;
+    text-align: left;
 }
 
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color: #ddd;
     display: block;
+    transition: 0.3s;
 }
 
 .sidebar a:hover {
@@ -29,10 +41,11 @@ body, html {
 }
 
 main {
-    margin-left: 250px;
-    padding: 0px 10px;
+    margin-left: 250px; /* Same as the width of the sidebar */
+    padding: 20px;
 }
 
+/* Responsive adjustments */
 @media screen and (max-width: 700px) {
     .sidebar {
         width: 100%;
@@ -50,29 +63,43 @@ main {
     }
 }
 
-#home h1 {
-    font-size: 2.5rem;
-    color: #333;
+/* Night Mode Styles */
+body.night-mode {
+    background-color: #2c3e50;
+    color: #ecf0f1;
 }
 
-#home p {
-    font-size: 1.5rem;
-    color: #666;
+/* Additional styles for night mode elements as needed */
+.theme-switch-wrapper {
+    position: absolute;
+    top: 20px; /* Move to the top */
+    left: 20px; /* Align to the left */
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
 }
 
-.social-links {
-    margin-top: 20px;
+/* Adjustments for the theme toggle icon */
+.theme-switch-wrapper i {
+    color: #ddd; /* Default icon color */
+    transition: color 0.3s; /* Smooth color transition */
+    font-size: 24px; /* Adjust size as needed */
 }
 
-.social-links a {
-    color: #333; /* Icon color */
-    margin-right: 10px;
+/* You might want to add specific styles for the moon icon if needed */
+.theme-switch-wrapper .fa-moon {
+    color: #f1f1f1; /* Example: a lighter color for better visibility in night mode */
 }
 
-.social-links a:hover {
-    color: #007bff; /* Icon color on hover */
+.theme-switch-wrapper i:hover {
+    color: #f1f1f1; /* Lighter color on hover */
 }
 
-.fa-brands {
-    font-size: 24px; /* Adjust icon size */
+/* Responsive adjustments for the theme switch */
+@media screen and (max-width: 700px) {
+    .theme-switch-wrapper {
+        position: fixed; /* Fixed position on smaller screens */
+        bottom: 10px;
+        right: 10px;
+    }
 }
