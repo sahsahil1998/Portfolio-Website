@@ -1,52 +1,84 @@
-/* Ensure the main content fills the viewport height and centers its children */
+/* Define color scheme variables */
+:root {
+    --text-color: #000; /* Black text for light mode */
+    --profile-border-color: #000; /* Black border for light mode */
+}
+
+/* Adjust variables for night mode */
+body.night-mode {
+    --text-color: #fff; /* White text for night mode */
+    --profile-border-color: #fff; /* White border for night mode */
+}
+
+/* Apply variables */
 main {
     display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-    min-height: 100vh; /* Minimum height to fill the viewport */
-    padding-left: 250px; /* Adjust based on the sidebar width to prevent overlap */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-left: 250px;
+    color: var(--text-color); /* Use variable for text color */
 }
 
-/* Container for text and social links to group them */
 .text-and-links {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: flex-start; /* Align items to the start (left) */
-    justify-content: center; /* Center them vertically */
-    flex: 1; /* Take up available space */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
 }
 
-/* Styling for the profile picture */
 .profile-picture {
-    width: 300px; /* Adjust width as needed */
-    height: 450px; /* Adjust height as needed */
-    object-fit: cover; /* Ensure the image covers the area */
-    border-radius: 50%; /* Optional: for rounded corners */
-    margin-left: 20px; /* Space between text/links and the image */
-    flex: 0 0 auto; /* Do not grow or shrink, but respect width/height */
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 20px;
+    flex: 0 0 auto;
+    border: 5px solid var(--profile-border-color); /* Use variable for border color */
 }
 
-/* Adjust the main section to use flexbox for layout */
 #home {
     display: flex;
-    justify-content: center; /* Center children horizontally */
-    align-items: center; /* Center children vertically */
-    gap: 20px; /* Space between text/links and the profile picture */
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
 }
 
-/* Additional styling for h1, p, and social links as needed */
 #home h1, #home p {
-    margin: 0; /* Remove default margin */
-    padding: 10px 0; /* Add some vertical padding */
+    margin: 0;
+    padding: 10px 0;
+    color: var(--text-color); /* Use variable for text color */
+}
+
+/* Styling for the name */
+#home h1 {
+    font-size: 48px; /* Increase the font size for emphasis */
+    font-weight: bold; /* Bolden the name */
+    color: var(--text-color); /* Use the text color variable for easy theme switching */
+    margin-bottom: 20px; /* Add some space below the name */
+    align-self: center;
+}
+
+/* Styling for the profession (Full Stack Software Developer) */
+#home p {
+    font-size: 24px; /* Slightly larger font size for visibility */
+    color: var(--text-color); /* Use the text color variable for consistency */
+    font-style: italic; /* Italicize the text for distinction */
+    margin-bottom: 20px; /* Add some space below the paragraph */
 }
 
 .social-links {
     display: flex;
-    gap: 10px; /* Space between social icons */
-    padding: 10px 0; /* Add some vertical padding */
+    gap: 10px;
+    padding: 10px 0;
+    align-self: center;
 }
 
 .social-links a {
-    color: #000; /* Icon color */
-    font-size: 24px; /* Icon size */
+    color: var(--text-color);
+    font-size: 24px;
+    padding-right: 25px;
+    align-self: center;
 }
+
