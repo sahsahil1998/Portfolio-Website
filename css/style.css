@@ -24,7 +24,7 @@ body {
     transition: background-color 0.3s; /* Smooth transition for background color */
     display: flex;
     flex-direction: column; /* Aligns items vertically */
-    justify-content: center; /* Centers items vertically */
+    justify-content: flex-start; /* Adjusted to flex-start to push items to the top */
 }
 
 /* Adjust the positioning of the theme switch to be at the top */
@@ -47,10 +47,24 @@ body {
     margin-bottom: 20px; /* Space below the toggle button */
 }
 
+#theme-toggle:hover::after {
+    content: attr(data-hover-text);
+    color: #000;
+    position: absolute;
+    left: 50%; /* Center below the button */
+    top: 100%; /* Move it below the button */
+    transform: translate(-50%, 10px); /* Center horizontally and add a little space below the button */
+    white-space: nowrap;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1001;
+}
 .sidebar ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove default padding */
-    margin-top: 60px; /* Adjust based on your design to push nav towards the middle */
+    margin-top: 80px; /* Increased margin to push nav towards the middle */
     flex-grow: 1; /* Allows the navigation to fill the space */
 }
 
