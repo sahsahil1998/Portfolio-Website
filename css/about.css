@@ -1,0 +1,15 @@
+.resume-button {
+    display: inline-block;
+    background-color: #007bff; /* Example blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center;
+    text-decoration: none; /* Removes underline from the link */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above the button */
+}
+
+.resume-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
