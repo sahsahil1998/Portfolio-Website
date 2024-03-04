@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (theme === 'night-mode') {
             themeToggle.classList.remove('fa-sun');
             themeToggle.classList.add('fa-moon');
-            themeToggle.setAttribute('data-hover-text', 'Switch to light mode'); // Update hover text for night mode
+            themeToggle.setAttribute('data-hover-text', 'Switch to light mode');
         } else {
             themeToggle.classList.remove('fa-moon');
             themeToggle.classList.add('fa-sun');
-            themeToggle.setAttribute('data-hover-text', 'Switch to dark mode'); // Update hover text for light mode
+            themeToggle.setAttribute('data-hover-text', 'Switch to dark mode');
         }
     }
 });
