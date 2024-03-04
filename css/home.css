@@ -1,13 +1,13 @@
 /* Define color scheme variables */
 :root {
-    --text-color: #000; /* Black text for light mode */
-    --profile-border-color: #000; /* Black border for light mode */
+    --text-color: #000; 
+    --profile-border-color: #000; 
 }
 
 /* Adjust variables for night mode */
 body.night-mode {
-    --text-color: #fff; /* White text for night mode */
-    --profile-border-color: #fff; /* White border for night mode */
+    --text-color: #fff; 
+    --profile-border-color: #fff; 
 }
 
 /* Apply variables */
@@ -17,7 +17,7 @@ main {
     justify-content: center;
     min-height: 100vh;
     padding-left: 250px;
-    color: var(--text-color); /* Use variable for text color */
+    color: var(--text-color); 
 }
 
 .text-and-links {
@@ -35,7 +35,7 @@ main {
     border-radius: 50%;
     margin-left: 20px;
     flex: 0 0 auto;
-    border: 5px solid var(--profile-border-color); /* Use variable for border color */
+    border: 5px solid var(--profile-border-color); 
 }
 
 #home {
@@ -48,24 +48,24 @@ main {
 #home h1, #home p {
     margin: 0;
     padding: 10px 0;
-    color: var(--text-color); /* Use variable for text color */
+    color: var(--text-color); 
 }
 
 /* Styling for the name */
 #home h1 {
-    font-size: 48px; /* Increase the font size for emphasis */
-    font-weight: bold; /* Bolden the name */
-    color: var(--text-color); /* Use the text color variable for easy theme switching */
-    margin-bottom: 20px; /* Add some space below the name */
+    font-size: 48px; 
+    font-weight: bold; 
+    color: var(--text-color);
+    margin-bottom: 20px; 
     align-self: center;
 }
 
-/* Styling for the profession (Full Stack Software Developer) */
+/* Styling for the profession title */
 #home p {
-    font-size: 24px; /* Slightly larger font size for visibility */
-    color: var(--text-color); /* Use the text color variable for consistency */
-    font-style: italic; /* Italicize the text for distinction */
-    margin-bottom: 20px; /* Add some space below the paragraph */
+    font-size: 24px; 
+    color: var(--text-color); 
+    font-style: italic; 
+    margin-bottom: 20px; 
 }
 
 .social-links {
