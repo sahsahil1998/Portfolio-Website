@@ -1,15 +1,82 @@
+/* Flex container for the main content */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align the items */
+    margin: 20px auto; /* Center the content with automatic margins on the sides */
+    max-width: 1100px; /* Adjust based on your preference for overall content width */
+    padding-left: 100px; /* Add padding to push content away from the sidebar */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+.top-image {
+    display: block;
+    width: 80%; /* Adjust based on your layout needs */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the image */
+}
+
+/* Container for the columns below the image */
+.columns {
+    display: flex;
+    width: 100%; /* Take up full width of the main-content */
+    justify-content: space-between; /* Distribute space between columns */
+    margin: 0 auto; /* Center the columns container */
+}
+
+/* Left column for contact and education */
+.contact-education {
+    flex: 1; /* Takes up 1 part of the space */
+    padding-right: 20px; /* Space between the columns */
+}
+
+/* Right column for about text */
+.about-text {
+    flex: 3; /* Allocate more space to the About Me section, making it larger than the contact-education section */
+}
+
 .resume-button {
     display: inline-block;
-    background-color: #007bff; /* Example blue background */
-    color: white; /* White text */
-    padding: 10px 20px; /* Padding inside the button */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
-    text-decoration: none; /* Removes underline from the link */
+    text-decoration: none;
     font-weight: bold;
-    border-radius: 5px; /* Rounded corners */
-    margin-top: 20px; /* Space above the button */
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .resume-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
+}
+
+/* Styling for the about section */
+#about, .contact-education {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 800px) {
+    .columns {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        width: 100%; /* Adjust for smaller screens */
+    }
+
+    .contact-education, .about-text {
+        padding-right: 0; /* Remove spacing between columns on smaller screens */
+        margin-bottom: 20px; /* Add some space between stacked columns */
+    }
+
+    .top-image {
+        width: 95%; /* Allows the GIF to take up more width on smaller screens */
+        max-width: none; /* Removes the max-width constraint on smaller screens */
+    }
+
+    #about {
+        padding: 10px;
+    }
 }
