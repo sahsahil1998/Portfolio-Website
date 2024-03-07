@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the heading */
+#contact h1 {
+    text-align: center;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Result message styling */
+#formResult {
+    display: none; /* Hidden by default */
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #e7f3fe;
+    border: 1px solid #9abfe6;
+    border-radius: 4px;
+    color: #31708f;
+}
+
+/* Dark mode styles */
+body.night-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.night-mode form {
+    background-color: #222;
+    color: #f4f4f4;
+}
+
+body.night-mode label {
+    color: #fff;
+}
+
+body.night-mode #contact h1 {
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+body.night-mode button {
+    background-color: #555;
+}
+
+body.night-mode button:hover {
+    background-color: #777;
+}
