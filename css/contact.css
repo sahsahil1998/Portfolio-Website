@@ -87,14 +87,16 @@ body.night-mode label {
 }
 
 body.night-mode #contact h1 {
-    background-color: #d3d3d3;
+    background-color: #d3d3d3; /* Light grey */
     color: #333;
 }
 
+/* Keeping buttons blue in dark mode */
 body.night-mode button {
-    background-color: #555;
+    background-color: #007bff;
+    color: white;
 }
 
 body.night-mode button:hover {
-    background-color: #777;
+    background-color: #0056b3;
 }
