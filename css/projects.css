@@ -1,0 +1,112 @@
+#projects h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333; 
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 0;
+    background-color: #e0e0e0; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transition: background-color 0.3s, color 0.3s;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.project-card h2 {
+    margin: 0;
+    padding: 20px;
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+}
+
+.project-card p, .project-card ul {
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.technologies-used {
+    list-style: none;
+    padding: 0;
+}
+
+.technologies-used li {
+    background: #eee;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.project-links {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-links a {
+    text-decoration: none;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s ease;
+}
+
+.project-links a:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin-left: 0;
+    }
+}
+
+/* Dark mode styles, ensuring compatibility with common.css */
+body.night-mode .project-card {
+    background: #424242;
+    color: #ecf0f1; 
+}
+
+body.night-mode .project-card h2,
+body.night-mode .project-links a {
+    color: #ecf0f1;
+}
+
+body.night-mode .technologies-used li {
+    background: #333; 
+    color: #ecf0f1;
+}
+
+body.night-mode #projects h1 {
+    color: #ecf0f1; 
+    background-color: #2a2a2a; 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
+}
