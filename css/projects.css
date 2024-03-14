@@ -1,4 +1,18 @@
-/* Base styles for the projects page, assuming common.css handles body, sidebar, and main styles */
+#projects h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333; /* Dark text color for light mode */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 0;
+    background-color: #e0e0e0; /* Slightly darker background for light mode */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* More pronounced shadow for depth */
+    transition: background-color 0.3s, color 0.3s;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Adds shadow to text for better readability */
+}
+
 
 .projects-grid {
     display: grid;
@@ -89,4 +103,10 @@ body.night-mode .project-links a {
 body.night-mode .technologies-used li {
     background: #333; 
     color: #ecf0f1;
+}
+
+body.night-mode #projects h1 {
+    color: #ecf0f1; /* Lighter text color for dark mode */
+    background-color: #2a2a2a; /* Slightly lighter dark background for contrast */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Adjust text shadow for dark mode if needed */
 }
