@@ -1,0 +1,22 @@
+.app-layout {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .app-layout {
+        flex-direction: column;
+    }
+    .content {
+        /* Ensure content takes full width on smaller screens */
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+}

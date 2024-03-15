@@ -4,8 +4,10 @@ import '../../css/about.css';
 const AboutPage = () => {
   return (
     <main>
-      <h1 id="about-header">About Me</h1>
       <div className="main-content">
+        <div className="full-width-header">
+            <h1 id="about-header">About Me</h1>
+        </div>
         <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Q2MWI0d3E3a3hjN3o5NXZuY3l6a2ttbjU0Z2N3YTk3MHI3dHVyaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" alt="Coding" className="top-image" />
         <div className="columns">
           <div className="contact-education">
