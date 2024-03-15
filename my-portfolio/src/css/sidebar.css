@@ -1,0 +1,84 @@
+.sidebar {
+    height: 100vh; 
+    width: 250px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #fff; 
+    overflow-x: hidden; 
+    padding-top: 20px; 
+    transition: background-color 0.3s; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+}
+
+.theme-switch-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    transition: background-color 0.3s;
+    margin-bottom: 20px; 
+}
+
+.sidebar ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 80px;
+    flex-grow: 1; 
+}
+
+.sidebar ul li {
+    padding: 8px;
+    text-align: left;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #007bff; 
+}
+
+body.night-mode .sidebar {
+    background-color: #000;
+}
+
+body.night-mode .sidebar a, body.night-mode .sidebar a:hover {
+    color: #ecf0f1; 
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    main {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
