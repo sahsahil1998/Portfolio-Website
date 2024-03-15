@@ -1,1 +1,1 @@
-Portfolio Website creation hosted via AWS
+Portfolio Website using React hosted via AWS
