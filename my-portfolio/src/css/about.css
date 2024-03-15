@@ -1,5 +1,6 @@
-/* Flex container for the main content */
-.main-content {
+/* Scoped styles for AboutPage */
+
+.about-page-container .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,14 +10,14 @@
     box-sizing: border-box;
 }
 
-.full-width-header {
+.about-page-container .full-width-header {
     width: 100%; 
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
 }
 
-#about-header {
+.about-page-container #about-header {
     text-align: center;
     font-size: 2rem;
     color: #333;
@@ -34,36 +35,33 @@
     box-sizing: border-box;
 }
 
-.top-image {
+.about-page-container .top-image {
     display: block;
     width: 40%; 
     height: auto;
     margin: 20px auto;
 }
 
-/* Container for the columns below the image */
-.columns {
+.about-page-container .columns {
     display: flex;
     width: 70%;
     justify-content: space-between;
     margin: 20px auto;
 }
 
-/* Left column for contact and education */
-.contact-education {
+.about-page-container .contact-education {
     flex: 1;
     padding-right: 20px;
     max-width: calc(50% - 10px); 
 }
 
-/* Right column for about text */
-.about-text {
+.about-page-container .about-text {
     flex: 3;
     padding-left: 20px;
     max-width: calc(50% - 10px); 
 }
 
-.resume-button {
+.about-page-container .resume-button {
     display: inline-block;
     background-color: #007bff;
     color: white;
@@ -76,12 +74,11 @@
     transition: background-color 0.3s ease;
 }
 
-.resume-button:hover {
+.about-page-container .resume-button:hover {
     background-color: #0056b3;
 }
 
-/* Styling for the about section */
-#about, .contact-education {
+.about-page-container #about, .about-page-container .contact-education {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
@@ -89,28 +86,41 @@
 
 /* Responsive design adjustments */
 @media (max-width: 800px) {
-    .main-content {
+    .about-page-container .main-content {
         padding: 20px;
     }
 
-    .columns {
+    .about-page-container .columns {
         flex-direction: column;
     }
 
-    .contact-education, .about-text {
+    .about-page-container .contact-education, .about-page-container .about-text {
         padding-right: 0;
         padding-left: 0;
         margin-bottom: 20px;
         max-width: 100%; 
     }
 
-    .top-image {
+    .about-page-container .top-image {
         width: 95%;
     }
 }
 
-body.night-mode #about-header {
+/* Dark mode styles adjusted for correct targeting */
+body.night-mode .about-page-container #about-header,
+body.night-mode .about-page-container .contact-education,
+body.night-mode .about-page-container #about,
+body.night-mode .about-page-container .about-text {
     color: #ecf0f1; 
     background-color: #2a2a2a; 
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
+}
+
+body.night-mode .about-page-container .resume-button {
+    background-color: #0056b3;
+    color: #ecf0f1;
+}
+
+body.night-mode .about-page-container .resume-button:hover {
+    background-color: #003d7a;
 }

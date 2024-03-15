@@ -68,17 +68,40 @@ body.night-mode .sidebar a, body.night-mode .sidebar a:hover {
 
 @media screen and (max-width: 700px) {
     .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
+        width: 100%; 
+        height: auto; 
+        position: fixed; 
+        bottom: 0; 
+        left: 0; 
+        top: auto; 
+        flex-direction: row; 
+        justify-content: center; 
+        padding-top: 0; 
+        padding-bottom: 10px; 
+        z-index: 2; 
     }
-    .sidebar a {float: left;}
-    main {margin-left: 0;}
+    .sidebar ul {
+        margin-top: 0; 
+        display: flex; 
+    }
+    .sidebar ul li {
+        padding: 8px 10px; 
+    }
+    .sidebar a {
+        padding: 5px 10px; 
+        font-size: 16px; 
+    }
+    .theme-switch-wrapper {
+        position: relative; 
+        top: auto; 
+        left: auto; 
+        transform: none; 
+        margin: 0 10px; 
+    }
 }
 
 @media screen and (max-width: 400px) {
     .sidebar a {
-        text-align: center;
-        float: none;
+        font-size: 14px;
     }
 }

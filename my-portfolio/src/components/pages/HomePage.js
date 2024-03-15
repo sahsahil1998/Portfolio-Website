@@ -6,23 +6,25 @@ import '../../css/home.css';
 
 function Home() {
   return (
-    <main>
-      <section id="home">
-        <div className="text-and-links">
-          <h1>Sahil Sah</h1>
-          <p>Full Stack Software Developer</p>
-          <div className="social-links">
-            <a href="https://github.com/sahsahil1998" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href="https://www.linkedin.com/in/sahil-sah" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
-              <FontAwesomeIcon icon={faLinkedinIn} />
-            </a>
+    <div className="home-page-container">
+      <main>
+        <section id="home">
+          <div className="text-and-links">
+            <h1>Sahil Sah</h1>
+            <p>Full Stack Software Developer</p>
+            <div className="social-links">
+              <a href="https://github.com/sahsahil1998" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="https://www.linkedin.com/in/sahil-sah" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+            </div>
           </div>
-        </div>
-        <img src={profilePicture} alt="Sahil Sah" className="profile-picture" />
-      </section>
-    </main>
+          <img src={profilePicture} alt="Sahil Sah" className="profile-picture" />
+        </section>
+      </main>
+    </div>
   );
 }
 

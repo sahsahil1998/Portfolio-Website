@@ -5,6 +5,10 @@ body, html {
   transition: background-color 0.3s;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* Light Mode Styles */
 body {
   background-color: #f0f0f0;
@@ -15,4 +19,24 @@ body {
 body.night-mode {
   background-color: #333;
   color: #ecf0f1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }

@@ -10,8 +10,8 @@ body.night-mode {
     --profile-border-color: #fff; 
 }
 
-/* Apply variables */
-main {
+/* Scoped styles for HomePage */
+.home-page-container main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@ main {
     color: var(--text-color); 
 }
 
-.text-and-links {
+.home-page-container .text-and-links {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -28,7 +28,7 @@ main {
     flex: 1;
 }
 
-.profile-picture {
+.home-page-container .profile-picture {
     width: 300px;
     height: 450px;
     object-fit: cover;
@@ -38,21 +38,21 @@ main {
     border: 5px solid var(--profile-border-color); 
 }
 
-#home {
+.home-page-container #home {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 200px;
 }
 
-#home h1, #home p {
+.home-page-container #home h1, .home-page-container #home p {
     margin: 0;
     padding: 10px 0;
     color: var(--text-color); 
 }
 
 /* Styling for the name */
-#home h1 {
+.home-page-container #home h1 {
     font-size: 48px; 
     font-weight: bold; 
     color: var(--text-color);
@@ -61,21 +61,21 @@ main {
 }
 
 /* Styling for the profession title */
-#home p {
+.home-page-container #home p {
     font-size: 24px; 
     color: var(--text-color); 
     font-style: italic; 
     margin-bottom: 20px; 
 }
 
-.social-links {
+.home-page-container .social-links {
     display: flex;
     gap: 10px;
     padding: 10px 0;
     align-self: center;
 }
 
-.social-links a {
+.home-page-container .social-links a {
     color: var(--text-color);
     font-size: 24px;
     padding-right: 25px;

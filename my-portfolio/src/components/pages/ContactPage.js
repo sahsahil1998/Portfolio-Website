@@ -48,28 +48,30 @@ const ContactPage = () => {
   };
 
   return (
-    <main>
-        <section id="contact">
-            <h1>Get in touch with me!</h1>
-            <form id="myForm" onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="name" required value={formData.name} onChange={handleChange} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange} />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required value={formData.message} onChange={handleChange}></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-                <button type="button" onClick={handleReset}>Reset</button>
-            </form>
-            {formResult && <div id="formResult">{formResult}</div>}
-        </section>
-    </main>
+    <div className="contact-page-container">
+      <main>
+          <section id="contact">
+              <h1>Get in touch with me!</h1>
+              <form id="myForm" onSubmit={handleSubmit}>
+                  <div className="form-group">
+                      <label htmlFor="name">Name:</label>
+                      <input type="text" id="name" name="name" required value={formData.name} onChange={handleChange} />
+                  </div>
+                  <div className="form-group">
+                      <label htmlFor="email">Email:</label>
+                      <input type="email" id="email" name="email" required value={formData.email} onChange={handleChange} />
+                  </div>
+                  <div className="form-group">
+                      <label htmlFor="message">Message:</label>
+                      <textarea id="message" name="message" rows="4" required value={formData.message} onChange={handleChange}></textarea>
+                  </div>
+                  <button type="submit">Send Message</button>
+                  <button type="button" onClick={handleReset}>Reset</button>
+              </form>
+              {formResult && <div id="formResult">{formResult}</div>}
+          </section>
+      </main>
+    </div>
   );
 };
 
