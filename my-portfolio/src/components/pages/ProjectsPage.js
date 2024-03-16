@@ -2,6 +2,9 @@ import React from 'react';
 import '../../css/projects.css';
 import outAndAboutAppImage from '../../images/out-and-about-app.png';
 import stackOverflowImage from '../../images/stack-overflow.PNG';
+import pubmedDatabaseImage from '../../images/Database mining image.jpg';
+import birdStrikeDatabaseImage from '../../images/birdstrike project image.jpg';
+import webCrawlerProjectImage from '../../images/web crawler project.png';
 
 
 const ProjectsPage = () => {
@@ -45,7 +48,7 @@ const ProjectsPage = () => {
             </div>
             {/* Project 3 */}
             <div className="project-card">
-              <img src="../images/pubmed-database.png" alt="PubMed Article Database" />
+            <div className="image-container" style={{ backgroundImage: `url(${pubmedDatabaseImage})` }}></div>
               <h2>PubMed Article Database and Data Mining</h2>
               <p>Developed a relational MySQL database on AWS for managing PubMed article data, processed with R. Implemented an Analytical Data Warehouse with a Star Schema for optimized data analysis.</p>
               <ul className="technologies-used">
@@ -59,7 +62,7 @@ const ProjectsPage = () => {
             </div>
             {/* Project 4 */}
             <div className="project-card">
-              <img src="../images/bird-strike-database.png" alt="Bird Strike Database" />
+            <div className="image-container" style={{ backgroundImage: `url(${birdStrikeDatabaseImage})` }}></div>
               <h2>Bird Strike Database</h2>
               <p>Initiated a MySQL database project on AWS to analyze FAA bird strike data. Utilized R for data processing and advanced SQL queries for insight extraction.</p>
               <ul className="technologies-used">
@@ -73,7 +76,7 @@ const ProjectsPage = () => {
             </div>
             {/* Project 5 */}
             <div className="project-card">
-              <img src="../images/web-crawler-project.png" alt="Web Crawler Project" />
+            <div className="image-container" style={{ backgroundImage: `url(${webCrawlerProjectImage})` }}></div>
               <h2>Web Crawler Project</h2>
               <p>Developed a Python web crawler for a simulated social networking site, focusing on HTTP protocol intricacies, session tracking, and ethical crawling practices.</p>
               <ul className="technologies-used">
