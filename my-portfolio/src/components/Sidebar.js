@@ -8,10 +8,26 @@ const Sidebar = () => {
     <div className="sidebar">
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Me</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li>
+            <Link to="/">
+              <i className="fa-solid fa-house"></i> Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about">
+              <i className="fa-solid fa-user-tie"></i> About Me
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects">
+              <i className="fa-solid fa-briefcase"></i> Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact">
+              <i className="fa-solid fa-envelope"></i> Contact
+            </Link>
+          </li>
         </ul>
       </nav>
       <ThemeToggle />

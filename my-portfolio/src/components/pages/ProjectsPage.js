@@ -1,5 +1,8 @@
 import React from 'react';
 import '../../css/projects.css';
+import outAndAboutAppImage from '../../images/out-and-about-app.png';
+import stackOverflowImage from '../../images/stack-overflow.PNG';
+
 
 const ProjectsPage = () => {
   return (
@@ -10,7 +13,7 @@ const ProjectsPage = () => {
           <div className="projects-grid">
             {/* Project 1 */}
             <div className="project-card">
-              <img src="../images/out-and-about-app.png" alt="Out and About App" />
+            <div className="image-container" style={{ backgroundImage: `url(${outAndAboutAppImage})` }}></div>
               <h2>Out and About App</h2>
               <p>Co-developed an Android application for outdoor activity planning, integrating Google Maps API for real-time location tracking and route planning. Focused on user-friendly interfaces and efficient navigation.</p>
               <ul className="technologies-used">
@@ -26,7 +29,7 @@ const ProjectsPage = () => {
             </div>
             {/* Project 2 */}
             <div className="project-card">
-              <img src="../images/stack-overflow.PNG" alt="Stack Overflow Imitation Web App" />
+            <div className="image-container" style={{ backgroundImage: `url(${stackOverflowImage})` }}></div>
               <h2>Stack Overflow Imitation Web App</h2>
               <p>Lead the development of a full-stack web application modeled after Stack Overflow, using React.js for the front-end and Node.js/Express with MongoDB for the back-end. Emphasized RESTful API integration and collaborative development.</p>
               <ul className="technologies-used">
