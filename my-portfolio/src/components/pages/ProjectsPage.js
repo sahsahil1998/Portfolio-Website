@@ -13,7 +13,21 @@ const ProjectsPage = () => {
       <main>
         <section id="projects">
           <h1>My Projects</h1>
+          <p className="coming-soon-note">Live demos of projects coming soon via Docker containers. Stay tuned!</p>
           <div className="projects-grid">
+            {/* Current project */}
+            <div className="project-card">
+              <h2>Booking System for Healthcare Facilities</h2>
+              <p>Actively co-developing a high-availability booking system for a major public health institution, aimed at streamlining healthcare staff scheduling. Utilizes advanced React.js patterns for efficient global state and authentication management, enhancing scalability and maintainability. Collaboration with healthcare professionals ensures the system meets the unique needs of various clinics, making it a versatile solution for broader healthcare settings.</p>
+              <ul className="technologies-used">
+                <li>React.js</li>
+                <li>Firebase</li>
+                <li>Firestore</li>
+              </ul>
+              <div className="project-details-note">
+                <p>Project source details are private due to security and privacy concerns for the facility. Please contact me for more information.</p>
+              </div>
+            </div>
             {/* Project 1 */}
             <div className="project-card">
             <div className="image-container" style={{ backgroundImage: `url(${outAndAboutAppImage})` }}></div>
