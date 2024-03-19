@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../css/about.css';
-import resume from '../../assets/Sahil Sah Resume.pdf';
 
 const AboutPage = () => {
   return (
@@ -20,7 +19,7 @@ const AboutPage = () => {
                 <li>Master of Science in Computer Science - Northeastern University</li>
                 <li>Bachelor of Science in Biology - University of Missouri-Columbia</li>
               </ul>
-              <a href={resume} target="_blank" rel="noopener noreferrer" className="resume-button">View or Download My Current Resume!</a>
+              <a href='../../assets/Sahil Sah Resume.pdf' target="_blank" rel="noopener noreferrer" className="resume-button">View or Download My Current Resume!</a>
             </div>
             <div className="about-text">
               <section id="about">
