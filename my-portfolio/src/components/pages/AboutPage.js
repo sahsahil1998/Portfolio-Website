@@ -19,7 +19,9 @@ const AboutPage = () => {
                 <li>Master of Science in Computer Science - Northeastern University</li>
                 <li>Bachelor of Science in Biology - University of Missouri-Columbia</li>
               </ul>
-              <a href={`${process.env.PUBLIC_URL}/assets/Sahil Sah Resume.pdf`} target="_blank" rel="noopener noreferrer" className="resume-button">View or Download My Current Resume!</a>
+              <a href="https://sahilportfoliobucket.s3.amazonaws.com/Sahil Sah Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">
+                View or Download My Current Resume!
+              </a>
             </div>
             <div className="about-text">
               <section id="about">
